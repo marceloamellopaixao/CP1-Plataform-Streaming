@@ -1,0 +1,839 @@
+{
+	"info": {
+		"_postman_id": "221b5574-67f9-45f5-9ecd-b64e99f51a33",
+		"name": "Checkpoint 1 - Plataforma Streaming",
+		"description": "# Integrantes:\n\n- Kaique Santos de Andrade - RM99562\n- Marcelo Augusto de Mello Paixão - RM99466",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33439740"
+	},
+	"item": [
+		{
+			"name": "CRUD Filme",
+			"item": [
+				{
+					"name": "Cadastros",
+					"item": [
+						{
+							"name": "Cadastro de Filme: 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // No ato de adicionar um Filme não é necessário o ID pois é dado um valor automáticamente.\r\n     // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"title\": \"Homem-Aranha: De Volta ao Lar\",\r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"description\": \"Peter Parker retorna para casa após o ocorrido em Guerra Civil.\", \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"releaseYear\": 2017, \r\n     // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"director\": \"Jon Watts\",\r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"gender\": \"Ficção e Super-heróis\" \r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastro de Filme: 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // No ato de adicionar um Filme não é necessário o ID pois é dado um valor automáticamente.\r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"title\": \"Vingadores: Guerra Infinita\", \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"description\": \"Os Vingadores se unem para enfrentar o poderoso vilão Thanos, que está determinado a coletar todas as Joias do Infinito.\", \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"releaseYear\": 2018, \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"director\": \"Anthony Russo, Joe Russo\", \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"gender\": \"Ficção e Super-heróis\" \r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastro de Filme: 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // No ato de adicionar um Filme não é necessário o ID pois é dado um valor automáticamente.\r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"title\": \"Batman: O Cavaleiro das Trevas\", \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"description\": \"Batman enfrenta o Coringa, um criminoso psicótico que busca mergulhar Gotham City no caos.\", \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"releaseYear\": 2008, \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"director\": \"Christopher Nolan\", \r\n     // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"gender\": \"Ação, Crime e Drama\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastro de Filme: 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // No ato de adicionar um Filme não é necessário o ID pois é dado um valor automáticamente.\r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"title\": \"Pantera Negra\", \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"description\": \"T'Challa retorna a Wakanda para assumir o trono após a morte de seu pai, o Rei T'Chaka. Ele enfrenta desafios para manter a paz em seu reino.\", \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"releaseYear\": 2018, \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"director\": \"Ryan Coogler\", \r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"gender\": \"Ação, Aventura e Ficção científica\" \r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Leituras",
+					"item": [
+						{
+							"name": "Listagem de Filmes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/movie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listagem de Filme por ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/movie/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Busca de Filme por Titulo, Genero ou anoLancamento",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/movie/find",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie",
+										"find"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "Vingadores",
+											"disabled": true
+										},
+										{
+											"key": "releaseYear",
+											"value": "2018",
+											"disabled": true
+										},
+										{
+											"key": "gender",
+											"value": "Ficção",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Atualizações",
+					"item": [
+						{
+							"name": "Atualizar Fiilme: 1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // Digite a ID no próprio body, após isto os campos a ser alterados pode ser qualquer um (são opcionais)\r\n    \"id\": 1, // Obrigatório *\r\n    \"title\": \"Homem-Aranha 1: De Volta ao Lar\" // Opcional\r\n    //\"description\": \"Peter Parker retorna para casa após o ocorrido em Guerra Civil.\", // Opcional\r\n    //\"releaseYear\": 2017, // Opcional\r\n    //\"director\": \"Jon Watts\", // Opcional\r\n    //\"gender\": \"Ficção e Super-heróis\" // Opcional\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Fiilme: 2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // Digite a ID no próprio body, após isto os campos a ser alterados pode ser qualquer um (são opcionais)\r\n    \"id\": 2, // Obrigatório *\r\n    \"title\": \"Vingadores 3: Guerra Infinita\" // Opcional\r\n    //\"description\": \"Os Vingadores se unem para enfrentar o poderoso vilão Thanos, que está determinado a coletar todas as Joias do Infinito.\", // Opcional\r\n    //\"releaseYear\": 2018, // Opcional\r\n    //\"director\": \"Anthony Russo, Joe Russo\", // Opcional\r\n    //\"gender\": \"Ficção e Super-heróis\" // Opcional\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Fiilme: 3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // Digite a ID no próprio body, após isto os campos a ser alterados pode ser qualquer um (são opcionais)\r\n    \"id\": 3, // Obrigatório *\r\n    \"title\": \"Batman: O Cavaleiro das Trevas\" // Opcional\r\n    //\"description\": \"Batman enfrenta o Coringa, um criminoso psicótico que busca mergulhar Gotham City no caos.\", // Opcional\r\n    //\"releaseYear\": 2008, // Opcional\r\n    //\"director\": \"Christopher Nolan\", // Opcional\r\n    //\"gender\": \"Ação, Crime e Drama\" // Opcional\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Fiilme: 4",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // Digite a ID no próprio body, após isto os campos a ser alterados pode ser qualquer um (são opcionais)\r\n    \"id\": 4, // Obrigatório *\r\n    \"title\": \"Pantera Negra 1\" // Opcional\r\n    //\"description\": \"T'Challa retorna a Wakanda para assumir o trono após a morte de seu pai, o Rei T'Chaka. Ele enfrenta desafios para manter a paz em seu reino.\", // Opcional\r\n    //\"releaseYear\": 2018, // Opcional\r\n    //\"director\": \"Ryan Coogler\", // Opcional\r\n    //\"gender\": \"Ação, Aventura e Ficção científica\" // Opcional\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Exclusões",
+					"item": [
+						{
+							"name": "Deletar Filme: 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar Filme: 2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar Filme: 3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar Filme: 4",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/movie/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"movie",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CRUD Serie",
+			"item": [
+				{
+					"name": "Cadastros",
+					"item": [
+						{
+							"name": "Cadastro de Serie: The Walking Dead",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  // No ato de adicionar uma Serie não é necessário o ID pois é dado um valor automáticamente.\r\n  // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n  \"title\": \"The Walking Dead\", \r\n  // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n  \"description\": \"Série dramática e pós-apocalíptica baseada na HQ de mesmo nome. Segue grupo liderado por Rick Grimes em busca de um lugar seguro em um mundo infestado por mortos-vivos.\", \r\n  // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n  \"releaseYear\": 2010, \r\n  // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n  \"gender\": \"Drama, Terror, Zumbi\", \r\n  // Os episódios é obrigatório colocar em (array/lista = []) para que possa adicioná-los na Serie.\r\n  \"episodes\": [\r\n    {\r\n        // ID não é necessária (incrementa automático).\r\n        // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n        \"title\": \"Days Gone Bye\", \r\n        // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n        \"numberEpisode\": 1, \r\n        // Caso da série ter mais temporadas acrescentar o número (\"temporada\": 2 e assim por diante).\r\n        // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n        \"season\": 1 \r\n    },\r\n    {\r\n        \"title\": \"Guts\",\r\n        \"numberEpisode\": 2,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"Tell It to the Frogs\",\r\n        \"numberEpisode\": 3,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"Vatos\",\r\n        \"numberEpisode\": 4,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"Wildfire\",\r\n        \"numberEpisode\": 5,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"TS-19\",\r\n        \"numberEpisode\": 6,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"What Lies Ahead\",\r\n        \"numberEpisode\": 1,\r\n        \"season\": 2\r\n    },\r\n    {\r\n        \"title\": \"Bloodletting\",\r\n        \"numberEpisode\": 2,\r\n        \"season\": 2\r\n    },\r\n    {\r\n        \"title\": \"Save the Last One\",\r\n        \"numberEpisode\": 3,\r\n        \"season\": 2\r\n    },\r\n    {\r\n        \"title\": \"Cherokee Rose\",\r\n        \"numberEpisode\": 4,\r\n        \"season\": 2\r\n    },\r\n    {\r\n        \"title\": \"Chupacabra\",\r\n        \"numberEpisode\": 5,\r\n        \"season\": 2\r\n    },\r\n    {\r\n        \"title\": \"Secrets\",\r\n        \"numberEpisode\": 6,\r\n        \"season\": 2\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/serie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastro de Serie: Stranger Things",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  // No ato de adicionar uma Serie não é necessário o ID pois é dado um valor automáticamente.\r\n  // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n  \"title\": \"Stranger Things\", \r\n  // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n  \"description\": \"Série de suspense e ficção científica que se passa na década de 1980 em uma cidade onde o desaparecimento de um menino leva a uma série de eventos misteriosos envolvendo experimentos governamentais secretos e forças sobrenaturais.\", \r\n  // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n  \"releaseYear\": 2016, \r\n  // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n  \"gender\": \"Suspense, Ficção Científica\", \r\n  // Os episódios é obrigatório colocar em (array/lista = []) para que possa adicioná-los na Serie.\r\n  \"episodes\": [\r\n    {\r\n        // ID não é necessária (incrementa automático).\r\n        // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n        \"title\": \"Chapter One: The Vanishing of Will Byers\", \r\n        // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n        \"numberEpisode\": 1, \r\n        // Caso da série ter mais temporadas acrescentar o número (\"temporada\": 2 e assim por diante).\r\n        // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n        \"season\": 1 \r\n    },\r\n    {\r\n        \"title\": \"Chapter Two: The Weirdo on Maple Street\",\r\n        \"numberEpisode\": 2,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"Chapter Three: Holly, Jolly\",\r\n        \"numberEpisode\": 3,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"Chapter Four: The Body\",\r\n        \"numberEpisode\": 4,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"Chapter Five: The Flea and the Acrobat\",\r\n        \"numberEpisode\": 5,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"Chapter Six: The Monster\",\r\n        \"numberEpisode\": 6,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"Chapter Seven: The Bathtub\",\r\n        \"numberEpisode\": 7,\r\n        \"season\": 1\r\n    },\r\n    {\r\n        \"title\": \"Chapter Eight: The Upside Down\",\r\n        \"numberEpisode\": 8,\r\n        \"season\": 1\r\n    }\r\n  ]\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/serie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cadastro de Serie: Avatar - Mestre do Ar",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    // No ato de adicionar uma Serie não é necessário o ID pois é dado um valor automáticamente.\r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"title\": \"Avatar: O Último Mestre do Ar\",\r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"description\": \"Série animada de aventura e fantasia que segue as aventuras de Aang, o último Mestre do Ar, e seus amigos na missão de derrotar a Nação do Fogo e restaurar o equilíbrio no mundo.\",\r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"releaseYear\": 2005,\r\n    // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n    \"gender\": \"Aventura, Fantasia\",\r\n    // Os episódios é obrigatório colocar em (array/lista = []) para que possa adicioná-los na Serie.\r\n    \"episodes\": [\r\n        {\r\n            // ID não é necessária (incrementa automático).\r\n            // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n            \"title\": \"The Boy in the Iceberg\",\r\n            // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n            \"numberEpisode\": 1,\r\n            // Obrigatório (Não pode ser Nulo - NOT NULL)*\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Avatar Returns\",\r\n            \"numberEpisode\": 2,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Southern Air Temple\",\r\n            \"numberEpisode\": 3,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Warriors of Kyoshi\",\r\n            \"numberEpisode\": 4,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The King of Omashu\",\r\n            \"numberEpisode\": 5,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"Imprisoned\",\r\n            \"numberEpisode\": 6,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Spirit World: Winter Solstice, Part 1\",\r\n            \"numberEpisode\": 7,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"Avatar Roku: Winter Solstice, Part 2\",\r\n            \"numberEpisode\": 8,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Waterbending Scroll\",\r\n            \"numberEpisode\": 9,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"Jet\",\r\n            \"numberEpisode\": 10,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Great Divide\",\r\n            \"numberEpisode\": 11,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Storm\",\r\n            \"numberEpisode\": 12,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Blue Spirit\",\r\n            \"numberEpisode\": 13,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Fortuneteller\",\r\n            \"numberEpisode\": 14,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"Bato of the Water Tribe\",\r\n            \"numberEpisode\": 15,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Deserter\",\r\n            \"numberEpisode\": 16,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Northern Air Temple\",\r\n            \"numberEpisode\": 17,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Waterbending Master\",\r\n            \"numberEpisode\": 18,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Siege of the North, Part 1\",\r\n            \"numberEpisode\": 19,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Siege of the North, Part 2\",\r\n            \"numberEpisode\": 20,\r\n            \"season\": 1\r\n        },\r\n        {\r\n            \"title\": \"The Avatar State\",\r\n            \"numberEpisode\": 1,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Cave of Two Lovers\",\r\n            \"numberEpisode\": 2,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"Return to Omashu\",\r\n            \"numberEpisode\": 3,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Swamp\",\r\n            \"numberEpisode\": 4,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"Avatar Day\",\r\n            \"numberEpisode\": 5,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Blind Bandit\",\r\n            \"numberEpisode\": 6,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"Zuko Alone\",\r\n            \"numberEpisode\": 7,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Chase\",\r\n            \"numberEpisode\": 8,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"Bitter Work\",\r\n            \"numberEpisode\": 9,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Library\",\r\n            \"numberEpisode\": 10,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Desert\",\r\n            \"numberEpisode\": 11,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Serpent's Pass\",\r\n            \"numberEpisode\": 12,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Drill\",\r\n            \"numberEpisode\": 13,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"City of Walls and Secrets\",\r\n            \"numberEpisode\": 14,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Tales of Ba Sing Se\",\r\n            \"numberEpisode\": 15,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"Appa's Lost Days\",\r\n            \"numberEpisode\": 16,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"Lake Laogai\",\r\n            \"numberEpisode\": 17,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Earth King\",\r\n            \"numberEpisode\": 18,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Guru\",\r\n            \"numberEpisode\": 19,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Crossroads of Destiny\",\r\n            \"numberEpisode\": 20,\r\n            \"season\": 2\r\n        },\r\n        {\r\n            \"title\": \"The Awakening\",\r\n            \"numberEpisode\": 1,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Headband\",\r\n            \"numberEpisode\": 2,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Painted Lady\",\r\n            \"numberEpisode\": 3,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"Sokka's Master\",\r\n            \"numberEpisode\": 4,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Beach\",\r\n            \"numberEpisode\": 5,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Avatar and the Fire Lord\",\r\n            \"numberEpisode\": 6,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Runaway\",\r\n            \"numberEpisode\": 7,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Puppetmaster\",\r\n            \"numberEpisode\": 8,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"Nightmares and Daydreams\",\r\n            \"numberEpisode\": 9,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Day of Black Sun: Part 1 - The Invasion\",\r\n            \"numberEpisode\": 10,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Day of Black Sun: Part 2 - The Eclipse\",\r\n            \"numberEpisode\": 11,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Western Air Temple\",\r\n            \"numberEpisode\": 12,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Firebending Masters\",\r\n            \"numberEpisode\": 13,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Boiling Rock: Part 1\",\r\n            \"numberEpisode\": 14,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Boiling Rock: Part 2\",\r\n            \"numberEpisode\": 15,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Southern Raiders\",\r\n            \"numberEpisode\": 16,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"The Ember Island Players\",\r\n            \"numberEpisode\": 17,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"Sozin's Comet: Part 1 - The Phoenix King\",\r\n            \"numberEpisode\": 18,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"Sozin's Comet: Part 2 - The Old Masters\",\r\n            \"numberEpisode\": 19,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"Sozin's Comet: Part 3 - Into the Inferno\",\r\n            \"numberEpisode\": 20,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"Sozin's Comet: Part 4 - Avatar Aang\",\r\n            \"numberEpisode\": 21,\r\n            \"season\": 3\r\n        },\r\n        {\r\n            \"title\": \"Sozin's Comet: Part 5 - Into the Inferno\",\r\n            \"numberEpisode\": 22,\r\n            \"season\": 3\r\n        }\r\n    ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/serie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Leituras",
+					"item": [
+						{
+							"name": "Listagem de Series",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/serie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Listagem de Serie por ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/serie/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Busca de Serie por Titulo, Genero, anoLancamento ou Numero de Temporadas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/serie/find?season=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie",
+										"find"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "The Walking Dead",
+											"disabled": true
+										},
+										{
+											"key": "releaseYear",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "gender",
+											"value": "Fic",
+											"disabled": true
+										},
+										{
+											"key": "season",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Atualizações",
+					"item": [
+						{
+							"name": "Atualizar Serie: 1",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"The Walking Dead - TWD\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/serie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Serie: 2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 2,\r\n    \"title\": \"Stranger Things - ST\",\r\n    //\"description\": \"Série de suspense e ficção científica que se passa na década de 1980 em uma cidade onde o desaparecimento de um menino leva a uma série de eventos misteriosos envolvendo experimentos governamentais secretos e forças sobrenaturais.\",\r\n    \"releaseYear\": 2016\r\n    //\"gender\": \"Suspense, Ficção Científica\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/serie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Atualizar Serie: 3",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 3,\r\n    \"title\": \"Avatar: O Último Mestre do Ar - AVT\",\r\n    // \"description\": \"Série animada de aventura e fantasia que segue as aventuras de Aang, o último Mestre do Ar, e seus amigos na missão de derrotar a Nação do Fogo e restaurar o equilíbrio no mundo.\",\r\n    // \"releaseYear\": 2005,\r\n    \"gender\": \"Aventura e Fantasia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/serie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Exclusões",
+					"item": [
+						{
+							"name": "Deletar Serie: 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/serie/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar Serie: 2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/serie/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deletar Serie: 3",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/serie/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"serie",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

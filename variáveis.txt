@@ -1,0 +1,31 @@
+------------------
+Movie:           ]
+------------------
+Long id
+String title
+String description
+Integer releaseYear
+String director
+String gender
+
+Consultas: /{id} ou /find?
+
+------------------
+Serie: /api/serie]
+------------------
+Long id
+String title
+String description
+Integer releaseYear
+String gender
+List<Episode> episodes
+
+Consultas: /{id} ou /find?
+
+------------------
+Episode:         ]
+------------------
+Long id
+String title
+Integer numberEpisode
+Integer season
